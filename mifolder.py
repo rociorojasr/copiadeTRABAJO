@@ -13,3 +13,5 @@ option = st.selectbox(
      ('Email', 'Hola', 'Mobile phone'))
 
 st.write('You selected:', option)
+color = st.color_picker('Pick A Color', '#00f900')
+st.write('The current color is', color)
