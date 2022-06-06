@@ -12,9 +12,11 @@ st.markdown("*Sandy Castillo Mallqui, Estefania Huaman Tovar, Maria Rivera Chicl
 #####CONTEXTO
 st.subheader("Contexto:")
 st.markdown("textooooo")
-from PIL import Image
+from PIL import Image    ######Insertar imagen en streamlit
 image = Image.open('covid.jpg')
 st.image(image)
+
+######Codigo para insertar dataframe (FALTA)
 
 option = st.selectbox(
      'How would you like to be contacted?',
