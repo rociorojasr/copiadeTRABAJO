@@ -6,7 +6,7 @@ st.title("EQUIPO 07 - VISUALIZACION DE DATA")
 
 option = st.selectbox(
      'How would you like to be contacted?',
-     ('Email', 'Home phone', 'Mobile phone'))
+     ('Email', 'Hola', 'Mobile phone'))
 
 st.write('You selected:', option)
 
