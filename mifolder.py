@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.title("EQUIPO 07 - VISUALIZACION DE DATA")
+st.title("EQUIPO 04 - VISUALIZACION DE DATA")
 
 option = st.selectbox(
      'How would you like to be contacted?',
