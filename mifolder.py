@@ -8,7 +8,7 @@ def download_data():
  filename = 'data.csv'
  urllib.request.urlretrieve(url, filename)
 download_data()
-
+dataset.show()
 
 st.title("      Casos positivos COVID-19", anchor = None)
 
