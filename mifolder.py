@@ -8,7 +8,7 @@ def download_data():
  filename = 'data.csv'
  urllib.request.urlretrieve(url, filename)
 download_data()
-dataset.show()
+pandas.read_csv(‘data.csv’)
 
 st.title("      Casos positivos COVID-19", anchor = None)
 
@@ -29,4 +29,5 @@ option = st.selectbox(
      'How would you like to be contacted?',
      ('Email', 'Hola', 'Mobile phone'))
 st.write('You selected:', option)
+
 
