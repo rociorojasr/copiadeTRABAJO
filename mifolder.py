@@ -29,5 +29,4 @@ option = st.selectbox(
      'How would you like to be contacted?',
      ('Email', 'Hola', 'Mobile phone'))
 st.write('You selected:', option)
-#
 
