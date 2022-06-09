@@ -5,10 +5,11 @@ import urllib.request
 @st.experimental_memo
 def download_data():
  url = 'https://files.minsa.gob.pe/s/eRqxR35ZCxrzNgr/download'
- filename = 'data.csv'
+ filename = 'positivos_covid.csv'
  urllib.request.urlretrieve(url, filename)
 download_data()
-pandas.read_csv(‘data.csv’)
+df = pd.read_csv(filename, sep=";", parse_dates=['FECHA_CORTE', 'FECHA_RESULTADO'])
+df
 
 st.title("      Casos positivos COVID-19", anchor = None)
 
@@ -30,4 +31,5 @@ option = st.selectbox(
      ('Email', 'Hola', 'Mobile phone'))
 st.write('You selected:', option)
 
+df[['FECHA_RESULTADO', 'METODODX']].groupby('FECHA_RESULTADO').count().rolling(window = 1, center =False).mean().plot()
 
