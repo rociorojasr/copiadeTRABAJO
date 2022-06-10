@@ -8,8 +8,8 @@ def download_data():
  filename = 'positivos_covid.csv'
  urllib.request.urlretrieve(url, filename)
 download_data()
-df = pd.read_csv(filename, sep=";", parse_dates=['FECHA_CORTE', 'FECHA_RESULTADO'])
-df
+#df = pd.read_csv(filename, sep=";", parse_dates=['FECHA_CORTE', 'FECHA_RESULTADO'])
+#df
 
 st.title("      Casos positivos COVID-19", anchor = None)
 
