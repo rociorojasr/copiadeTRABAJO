@@ -10,6 +10,9 @@ def download_data():
  urllib.request.urlretrieve(url, filename)
 download_data()
 print(df) 
+#df.show() ---- ERROR
+#df = pd.read_csv(filename)
+#df ---- ERROR
 st.title("      Casos positivos COVID-19", anchor = None)
 
 st.markdown("En la presente página se visualizará distintos gráficos con datos relacionados a la evolución de los casos postivos de COVID-19.")
