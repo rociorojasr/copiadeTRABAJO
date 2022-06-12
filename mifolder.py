@@ -23,12 +23,6 @@ st.image(image)
 
 df = pd.read_csv(filename)
 df
-######Codigo para insertar dataframe (FALTA)
-
-option = st.selectbox(
-     'How would you like to be contacted?',
-     ('Email', 'Hola', 'Mobile phone'))
-st.write('You selected:', option)
 
 #st.line_chart(df[['FECHA_RESULTADO', 'METODODX']].groupby('FECHA_RESULTADO').count().rolling(window = 1, center =False))
-###
+
