@@ -8,9 +8,6 @@ def download_data():
  filename = 'positivos_covid.csv'
  urllib.request.urlretrieve(url, filename)
 download_data()
-#df = pd.read_csv(filename, sep=";", parse_dates=['FECHA_CORTE', 'FECHA_RESULTADO'])
-#df
-
 st.title("      Casos positivos COVID-19", anchor = None)
 
 st.markdown("En la presente página se visualizará distintos gráficos con datos relacionados a la evolución de los casos postivos de COVID-19.")
@@ -24,6 +21,8 @@ from PIL import Image    ######Insertar imagen en streamlit
 image = Image.open('covid.jpg')
 st.image(image)
 
+df = pd.read_csv(filename)
+df
 ######Codigo para insertar dataframe (FALTA)
 
 option = st.selectbox(
