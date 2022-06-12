@@ -5,11 +5,11 @@ import urllib.request
 @st.experimental_memo
 def download_data():
  url = 'https://files.minsa.gob.pe/s/eRqxR35ZCxrzNgr/download'
- df = pd.read_csv(url,index_col=0,parse_dates=[0])
+ #df = pd.read_csv(url,index_col=0,parse_dates=[0])
  filename = 'positivos_covid.csv'
  urllib.request.urlretrieve(url, filename)
 download_data()
-print(df) 
+#print(df) 
 #df.show() ---- ERROR
 #df = pd.read_csv(filename)
 #df ---- ERROR
