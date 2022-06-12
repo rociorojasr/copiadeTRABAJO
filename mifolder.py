@@ -24,5 +24,5 @@ st.image(image)
 df = pd.read_csv(filename)
 df
 
-#st.line_chart(df[['FECHA_RESULTADO', 'METODODX']].groupby('FECHA_RESULTADO').count().rolling(window = 1, center =False))
+##st.line_chart(df[['FECHA_RESULTADO', 'METODODX']].groupby('FECHA_RESULTADO').count().rolling(window = 1, center =False))
 
