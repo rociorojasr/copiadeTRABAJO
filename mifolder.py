@@ -1,19 +1,22 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import urllib.request
+import gdown
+
+#id = 1Gu65mnJ_lxE0BdbkL1nTq5qaFJ1dJ9tq
 @st.experimental_memo
 def download_data():
- url = 'https://files.minsa.gob.pe/s/eRqxR35ZCxrzNgr/download'
- #df = pd.read_csv(url,index_col=0,parse_dates=[0])
- filename = 'positivos_covid.csv'
- urllib.request.urlretrieve(url, filename)
+ #https://drive.google.com/uc?id=YOURFILE
+ url = "https://drive.google.com/uc?id=1Gu65mnJ_lxE0BdbkL1nTq5qaFJ1dJ9tq"
+ output = "data.csv"
+ gdown.download(url,output,quiet = False)
+
 download_data()
-#print(df) 
-#df.show() ---- ERROR
-#df = pd.read_csv(filename)
-#df ---- ERROR
-st.title("      Casos positivos COVID-19", anchor = None)
+data = pd.read_csv("data.csv", sep = ";", nrows = 1000000,parse_datos = ["FECHA_CORTE", "FECHA RESULTADO"])
+st.dataframe(data.head(20))
+
+st.title("      Casos positivos COVID-19", anchor = None )
+
 
 st.markdown("En la presente página se visualizará distintos gráficos con datos relacionados a la evolución de los casos postivos de COVID-19.")
 st.subheader('Equipo 04')
