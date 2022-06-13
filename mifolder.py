@@ -12,7 +12,7 @@ def download_data():
  gdown.download(url,output,quiet = False)
 
 download_data()
-data = pd.read_csv('data.csv', sep = ';', nrows = 1000000, parse_dates=['FECHA_CORTE'])
+data = pd.read_csv('data.csv', sep = ';', nrows = 1000000, parse_dates=['FECHA_CORTE', 'FECHA_RESULTADO'])
 st.dataframe(data.head(20))
 
 
