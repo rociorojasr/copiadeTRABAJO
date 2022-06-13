@@ -29,6 +29,6 @@ image = Image.open('covid.jpg')
 
 st.image(image)
 st.dataframe(data.head(20))
-edad=data['EDAD']
-st.line_chart(edad)
+metodo=data['METODODX']
+st.line_chart(metodo)
 #df[['FECHA_RESULTADO', 'METODODX']].groupby('FECHA_RESULTADO').count().rolling(window = 1, center =False).mean().plot()
