@@ -12,9 +12,12 @@ def download_data():
  gdown.download(url,output,quiet = False)
 
 download_data()
-data = pd.read_csv('data.csv', sep = ';', nrows = 1000000,parse_dates = ['FECHA_CORTE', 'FECHA RESULTADO'])
+data = pd.read_csv('data.csv', sep = ';', nrows = 1000000)
 st.dataframe(data.head(20))
 
+
+
+'''
 st.title("      Casos positivos COVID-19", anchor = None )
 
 
@@ -28,7 +31,7 @@ st.markdown("textooooo")
 from PIL import Image    ######Insertar imagen en streamlit
 image = Image.open('covid.jpg')
 st.image(image)
-
+'''
 #1
 
 
