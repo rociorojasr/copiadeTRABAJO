@@ -31,5 +31,5 @@ st.image(image)
 
 
 
-#st.line_chart(df[['FECHA_RESULTADO', 'METODODX']].groupby('FECHA_RESULTADO').count().rolling(window = 1, center =False))
+
 
