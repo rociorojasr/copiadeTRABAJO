@@ -7,12 +7,12 @@ import gdown
 @st.experimental_memo
 def download_data():
  #https://drive.google.com/uc?id=YOURFILE
- url = "https://drive.google.com/uc?id=1Gu65mnJ_lxE0BdbkL1nTq5qaFJ1dJ9tq"
- output = "data.csv"
+ url = 'https://drive.google.com/uc?id=1Gu65mnJ_lxE0BdbkL1nTq5qaFJ1dJ9tq'
+ output = 'data.csv'
  gdown.download(url,output,quiet = False)
 
 download_data()
-data = pd.read_csv("data.csv", sep = ";", nrows = 1000000,parse_datos = ["FECHA_CORTE", "FECHA RESULTADO"])
+data = pd.read_csv('data.csv', sep = ';', nrows = 1000000,parse_dates = ['FECHA_CORTE', 'FECHA RESULTADO'])
 st.dataframe(data.head(20))
 
 st.title("      Casos positivos COVID-19", anchor = None )
