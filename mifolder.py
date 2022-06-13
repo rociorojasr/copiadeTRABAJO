@@ -30,5 +30,5 @@ image = Image.open('covid.jpg')
 st.image(image)
 st.dataframe(data.head(20))
 metodo=data['METODODX']
-st.line_chart(metodo)
+st.altair_chart(metodo)
 #df[['FECHA_RESULTADO', 'METODODX']].groupby('FECHA_RESULTADO').count().rolling(window = 1, center =False).mean().plot()
