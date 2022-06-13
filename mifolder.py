@@ -17,7 +17,7 @@ st.dataframe(data.head(20))
 
 
 
-'''
+
 st.title("      Casos positivos COVID-19", anchor = None )
 
 
@@ -31,7 +31,7 @@ st.markdown("textooooo")
 from PIL import Image    ######Insertar imagen en streamlit
 image = Image.open('covid.jpg')
 st.image(image)
-'''
+
 #11
 
 
