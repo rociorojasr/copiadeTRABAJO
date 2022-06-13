@@ -27,8 +27,3 @@ st.markdown("textooooo")
 from PIL import Image    ######Insertar imagen en streamlit
 image = Image.open('covid.jpg')
 st.image(image)
-'''
-#2
-
-
-
