@@ -30,9 +30,13 @@ image = Image.open('covid.jpg')
 st.image(image)
 st.dataframe(data.head(20))
 metodo=data['METODODX']
+st.line_chart(edades)
+
 ######## GRÁFICO 01
+
+
+'''
 A= data[['METODODX', 'SEXO']].groupby('METODODX').count().rename(columns = {'SEXO': 'count'})
-A
 import matplotlib.pyplot as plt
 labels = 'AG', 'PCR', 'PR',
 sizes = [446144,29722,256634]
@@ -42,7 +46,7 @@ ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
         shadow=True, startangle=90)
 ax1.axis('equal')  
 st.pyplot(fig1)
-
+'''
 
 
 
