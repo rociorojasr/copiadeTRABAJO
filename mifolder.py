@@ -35,7 +35,7 @@ A= data[['METODODX', 'SEXO']].groupby('METODODX').count().rename(columns = {'SEX
 A
 
 
-import matplotlib.pyplot as plt
+From matplotlib import pyplot as plt
 labels = 'AG', 'PCR', 'PR',
 sizes = [446144,29722,256634]
 explode = (0, 0.1, 0, 0)  
