@@ -28,4 +28,10 @@ image = Image.open('covid.jpg')
 st.image(image)
 st.dataframe(data.head(20))
 metodo=data['METODODX']
+######## GRÁFICO 01
+A= data[['METODODX', 'SEXO']].groupby('METODODX').count().rename(columns = {'SEXO': 'count'})
+
+
+
+
 
