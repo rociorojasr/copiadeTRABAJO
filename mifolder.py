@@ -30,7 +30,7 @@ image = Image.open('covid.jpg')
 st.image(image)
 st.subheader("Dashboard")
 st.dataframe(data.head(20))
-dep=data['DEPARTAMENTO',x=alt.X("index"), y=alt.Y("index")]
+dep=data['DEPARTAMENTO',x=alt.X("index"), y=alt.Y("METODODX")]
 st.bar_chart(dep)
 
 
