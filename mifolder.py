@@ -31,7 +31,7 @@ st.image(image)
 st.subheader("Dashboard")
 st.dataframe(data.head(20))
 dep=data['DEPARTAMENTO']
-st.bar_chart(dep,axis = 0)
+st.bar_chart(dep,x=alt.X("index"), y=alt.Y("index"))
 
 
 
