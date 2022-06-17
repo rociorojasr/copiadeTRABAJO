@@ -31,7 +31,6 @@ st.image(image)
 st.dataframe(data.head(20))
 metodo=data['METODODX']
 st.line_chart(metodo)
-#ma
 
 
 
