@@ -28,9 +28,10 @@ from PIL import Image    ######Insertar imagen en streamlit
 image = Image.open('covid.jpg')
 
 st.image(image)
-st.dataframe(data.head(20))
-metodo=data['METODODX']
+st.dataframe(METODODX.head(20))
+metodo=[METODODX.'data']
 st.line_chart(metodo)
+
 
 
 
