@@ -29,8 +29,8 @@ image = Image.open('covid.jpg')
 
 st.image(image)
 st.dataframe(data.head(20))
-edades=data['EDAD']
-st.line_chart(edades)
+metodo=data['METODODX']
+st.line_chart(metodo)
 
 
 
