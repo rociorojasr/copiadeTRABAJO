@@ -26,11 +26,11 @@ st.subheader("Contexto:")
 st.markdown("textooooo")
 from PIL import Image    ######Insertar imagen en streamlit
 image = Image.open('covid.jpg')
-st.dataframe(data.head(20))
-metodo=data['METODODX']
-st.line_chart(metodo)
-#ma
 
+st.image(image)
+st.dataframe(data.head(20))
+dep=data['DEPARTAMENTO']
+st.line_chart(dep)
 
 
 
