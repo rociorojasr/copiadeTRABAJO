@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import gdown
+import matplotlib.pyplot as plt
+
 #id = 1Gu65mnJ_lxE0BdbkL1nTq5qaFJ1dJ9tq
 @st.experimental_memo
 def download_data():
@@ -31,9 +33,6 @@ metodo=data['METODODX']
 ######## GRÁFICO 01
 A= data[['METODODX', 'SEXO']].groupby('METODODX').count().rename(columns = {'SEXO': 'count'})
 A
-
-import streamlit as st
-import matplotlib.pyplot as plt
 
 labels = 'AG', 'PCR', 'PR',
 sizes = [446144,29722,256634]
