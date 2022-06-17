@@ -29,7 +29,7 @@ image = Image.open('covid.jpg')
 
 st.image(image)
 st.dataframe(data.head(20))
-metodo=data['METODODX']
+edades=data['EDAD']
 st.line_chart(edades)
 
 ######## GRÁFICO 01
