@@ -28,6 +28,7 @@ from PIL import Image    ######Insertar imagen en streamlit
 image = Image.open('covid.jpg')
 
 st.image(image)
+st.subheader("Dashboard")
 st.dataframe(data.head(20))
 dep=data['DEPARTAMENTO']
 st.bar_chart(dep)
