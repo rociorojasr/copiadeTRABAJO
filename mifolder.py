@@ -30,7 +30,7 @@ image = Image.open('covid.jpg')
 st.image(image)
 st.dataframe(data.head(20))
 dep=data['DEPARTAMENTO']
-st.line_chart(dep)
+st.bar_chart(dep)
 
 
 
