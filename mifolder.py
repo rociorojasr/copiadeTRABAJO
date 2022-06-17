@@ -31,7 +31,7 @@ st.image(image)
 st.subheader("Dashboard")
 st.dataframe(data.head(20))
 metodo=data['METODODX']
-st.altair_chart(metodo)
+st.line_chart(metodo)
 
 
 
