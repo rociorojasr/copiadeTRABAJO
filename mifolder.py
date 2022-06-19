@@ -6,10 +6,7 @@ from pyecharts.charts import Bar
 from streamlit_echarts import st_pyecharts
 from streamlit_echarts import st_echarts
 import yfinance as yf
-import streamlit as st
-import matplotlib.pyplot as plt
-import plost
-#from PIL import Image    ######Insertar imagen en streamlit
+
 #id = 1Gu65mnJ_lxE0BdbkL1nTq5qaFJ1dJ9tq
 df = pd.read_csv(r'C:\Users\51952\Downloads\PositivosCovid\positivos_covid.csv',sep=";", skip_blank_lines=True, parse_dates=['FECHA_CORTE', 'FECHA_RESULTADO'])
 st.title("      CASOS POSITIVOS: COVID-19", anchor = None )
