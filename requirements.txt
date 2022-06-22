@@ -1,3 +1,4 @@
 gdown
 pyecharts
 streamlit_echarts
+st_pyecharts
