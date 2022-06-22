@@ -1,3 +1,4 @@
+import gdown
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -7,7 +8,16 @@ from streamlit_echarts import st_pyecharts
 from streamlit_echarts import st_echarts
 
 #id = 1Gu65mnJ_lxE0BdbkL1nTq5qaFJ1dJ9tq
-df = pd.read_csv(r'C:\Users\51952\Downloads\PositivosCovid\positivos_covid.csv',sep=";", skip_blank_lines=True, parse_dates=['FECHA_CORTE', 'FECHA_RESULTADO'])
+@st.experimental_memo
+def download_data():
+     url = "https://drive.google.com/uc?id=1Gu65mnJ_lxE0BdbkL1nTq5qaFJ1dJ9tq"
+     output = 'data.csv'
+     gdown.download(url,output,quiet=False)
+ download_data()
+#df = pd.read_csv(r'C:\Users\51952\Downloads\PositivosCovid\positivos_covid.csv',sep=";", skip_blank_lines=True, parse_dates=['FECHA_CORTE', 'FECHA_RESULTADO'])
+
+df = pd.read_csv('data.csv',sep = ";",  skip_blank_lines=True, nrows=1000000,parse_dates=['FECHA_CORTE', 'FECHA_RESULTADO'])
+
 st.title("      CASOS POSITIVOS: COVID-19", anchor = None )
 #image = Image.open('Coronavirus')
 #st.image(image)
