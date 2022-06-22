@@ -13,7 +13,7 @@ def download_data():
      url = "https://drive.google.com/uc?id=1Gu65mnJ_lxE0BdbkL1nTq5qaFJ1dJ9tq"
      output = 'data.csv'
      gdown.download(url,output,quiet=False)
- download_data()
+download_data()
 #df = pd.read_csv(r'C:\Users\51952\Downloads\PositivosCovid\positivos_covid.csv',sep=";", skip_blank_lines=True, parse_dates=['FECHA_CORTE', 'FECHA_RESULTADO'])
 
 df = pd.read_csv('data.csv',sep = ";",  skip_blank_lines=True, nrows=1000000,parse_dates=['FECHA_CORTE', 'FECHA_RESULTADO'])
