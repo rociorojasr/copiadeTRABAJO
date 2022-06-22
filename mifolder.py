@@ -19,7 +19,7 @@ download_data()
 df = pd.read_csv('data.csv',sep = ";",  skip_blank_lines=True, nrows=1000000,parse_dates=['FECHA_CORTE', 'FECHA_RESULTADO'])
 
 st.title("      CASOS POSITIVOS: COVID-19", anchor = None )
-from PIL import image
+from PIL import Image
 image = Image.open('covid.jpg')
 st.image(image)
 st.subheader('Equipo 04:')
