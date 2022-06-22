@@ -21,15 +21,13 @@ df = pd.read_csv('data.csv',sep = ";",  skip_blank_lines=True, nrows=1000000,par
 st.title("      CASOS POSITIVOS: COVID-19", anchor = None )
 from PIL import Image
 image = Image.open('covid.jpg')
-st.image(image)
 st.subheader('Equipo 04:')
 st.markdown("*Sandy Castillo Mallqui, Estefania Huaman Tovar, Maria Rivera Chiclla, Jackeline Roque Maceda y Heydi Surco Mamani*")
 
 #####CONTEXTO
 st.subheader("Contexto:")
 st.markdown("La enfermedad por coronavirus (COVID-19) es una enfermedad infecciosa causada por el virus SARS-CoV-2. Esta enfermedad  se convirtió en una  pandemia  gracias a su forma de transmisión la cual es por vía aérea.  Causando la propagación exponencial por todo el mundo,afectando  a muchos países, originando  miles de muertes, cierre de actividades, impactos económicos, ambientales. Es por ello que  fue indispensable generar un sistema de datos para contabilizar el número de infectados, así como los departamentos del Perú con mayor incidencia de positivos , con el objetivo de tomar medidas para frenar  la propagación de este virus y evitar muertes. También fue necesario registrar  el tipo de prueba y sexo. Con todo ello los sistemas de información fueron puntos claves durante la pandemia ya que gracias  a estos datos  se pudo  tomar decisiones lo más informadas posibles y adecuar políticas que permitan una mejor inteligencia en acciones de salud.")
-
-#st.image(image)
+st.image(image)
 st.subheader("Dashboard")
 st.dataframe(df.head(20))
 st.subheader("DESCRIPCION DEL DATASET:")
