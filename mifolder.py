@@ -19,8 +19,8 @@ download_data()
 df = pd.read_csv('data.csv',sep = ";",  skip_blank_lines=True, nrows=1000000,parse_dates=['FECHA_CORTE', 'FECHA_RESULTADO'])
 
 st.title("      CASOS POSITIVOS: COVID-19", anchor = None )
-#image = Image.open('Coronavirus')
-#st.image(image)
+image = Image.open('Covid.jpg')
+st.image(image)
 st.subheader('Equipo 04:')
 st.markdown("*Sandy Castillo Mallqui, Estefania Huaman Tovar, Maria Rivera Chiclla, Jackeline Roque Maceda y Heydi Surco Mamani*")
 
