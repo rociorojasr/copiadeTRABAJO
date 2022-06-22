@@ -1,2 +1,3 @@
 gdown
 pyecharts
+streamlit_echarts
