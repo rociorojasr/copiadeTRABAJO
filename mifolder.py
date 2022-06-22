@@ -101,7 +101,7 @@ elif option == "Gráfico de barras por DEPARTAMENTOS":
     st.subheader("Gráfico de barras por DEPARTAMENTOS")
     L = df[['DEPARTAMENTO', 'METODODX']].groupby('DEPARTAMENTO').count()
     st.bar_chart(L)
-#Cuarto grafico
+##Cuarto grafico
 elif option == "Gráfico de dispersión por FECHA DE RESULTADOS":
     st.subheader("Gráfico de dispersión por FECHA DE RESULTADOS")
     L = df[['FECHA_RESULTADO', 'METODODX']].groupby('FECHA_RESULTADO').count()
