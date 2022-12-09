@@ -25,17 +25,6 @@ download_data()
 df = pd.read_csv('data.csv',sep = ";",  skip_blank_lines=True, nrows=1000,parse_dates=['id_centro_vacunacion', 'id_eess'])
 st.dataframe(data.head(20))
 #########################################
-#     output = 'data.csv'
-#     gdown.download(url,output,quiet=False)
-#download_data()
-##df = pd.read_csv(r'C:\Users\51952\Downloads\PositivosCovid\positivos_covid.csv',sep=";", skip_blank_lines=True, parse_dates=['FECHA_CORTE', 'FECHA_RESULTADO'])
 
-#df = pd.read_csv('data.csv',sep = ";",  skip_blank_lines=True, nrows=1000000,parse_dates=['FECHA_CORTE', 'FECHA_RESULTADO'])
 
-st.title("      CASOS POSITIVOS: COVID-19", anchor = None )
-from PIL import Image
-image = Image.open('covid.jpg')
-st.subheader('Equipo 04:')
-st.markdown("*Sandy Castillo Mallqui, Estefania Huaman Tovar, Maria Rivera Chiclla, Jackeline Roque Maceda y Heydi Surco Mamani*")
 
-#####CONTEXTO
