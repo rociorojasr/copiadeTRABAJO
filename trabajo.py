@@ -10,8 +10,8 @@ def download_data():
 	output="data.csv"
 	gdown.download(url,output,quiet= False)
 download_data()
-df = pd.read_csv('data.csv',sep = ";",  skip_blank_lines=True, nrows=1000,parse_dates=['Departamento', '#Centro de vacunación'])
-st.dataframe(data.head(20))
+df = pd.read_csv('data.csv',sep = ";",  skip_blank_lines=True, nrows=25,parse_dates=['Departamento', '#Centro de vacunación'])
+st.dataframe(data.head(5))
 
 
 
