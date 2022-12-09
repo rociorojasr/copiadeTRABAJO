@@ -14,7 +14,7 @@ from streamlit_echarts import st_echarts
 ###########################################
 
 #id=13iNig4VIvt5Gm0znUt2eq3_YnGCgCQHM
-@st.experimental_nemo
+@st.experimental_memo
 def download_data():
 	#https://drive.google.com/uc?id=MIOOO
 	url="https://drive.google.com/uc?id=13iNig4VIvt5Gm0znUt2eq3_YnGCgCQHM"
